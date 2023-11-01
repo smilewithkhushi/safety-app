@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "261522586367",
+    "project_id": "safety-app-202dc",
+    "storage_bucket": "safety-app-202dc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:261522586367:android:8e923f98b4dea49b752aca",
+        "android_client_info": {
+          "package_name": "com.example.safetyapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDHtYFOc0Nuc81g7JQZizQ1SvpnAlvNAbA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
