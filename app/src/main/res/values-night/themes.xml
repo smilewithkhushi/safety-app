@@ -3,5 +3,17 @@
     <style name="Base.Theme.SafetyApp" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your dark theme here. -->
         <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+
+    <style name="darkTheme" parent="Theme.Material3.Dark">
+        <item name="colorPrimary">@color/pink900</item>
+        <item name="colorPrimaryDark">@color/pink700</item>
+        <item name="colorAccent">@color/pink300</item>
+
+<!--        <item name="">#131313</item>-->
+<!--        &lt;!&ndash;    background changes to black when dark mode is activated &ndash;&gt;-->
+<!--        <item name="">#ffff</item>-->
+<!--        &lt;!&ndash;     text and button color change to white to contrast with the app's background&ndash;&gt;-->
+<!--        <item name="">#ffff</item>-->
+
     </style>
 </resources>

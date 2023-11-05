@@ -11,12 +11,13 @@
     <TextView
         android:id="@+id/loginHeading"
         android:layout_marginBottom="30dp"
-        android:layout_marginTop="150dp"
+        android:layout_marginTop="130dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Sign into your account"
         android:textStyle="bold"
-        android:textColor="@color/black"
+        android:fontFamily="@font/alata"
+        android:textColor="@color/pink700"
         android:textSize="20dp"
         android:layout_gravity="center"/>
 
@@ -33,7 +34,9 @@
             android:layout_height="wrap_content"
             android:textSize="16sp"
             android:inputType="textEmailAddress"
-            android:hint="Password"
+            android:drawableLeft="@drawable/baseline_email_24"
+            android:drawablePadding="10dp"
+            android:hint="Email Address"
         />
 
     </com.google.android.material.textfield.TextInputLayout>
@@ -51,7 +54,8 @@
             android:layout_height="wrap_content"
            android:textSize="16sp"
             android:inputType="textPassword"
-            android:drawablePadding="15dp"
+            android:drawableLeft="@drawable/baseline_password_24"
+            android:drawablePadding="10dp"
             android:hint="Password"
             />
     </com.google.android.material.textfield.TextInputLayout>
@@ -65,7 +69,10 @@
         android:paddingHorizontal="40dp"
         android:paddingVertical="15dp"
         android:text="LOG IN"
+        android:backgroundTint="@color/pink700"
+        android:fontFamily="@font/alata"
         android:textSize="18sp">
+    </Button>
 
     <LinearLayout
         android:layout_gravity="center"
@@ -82,6 +89,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:textSize="16sp"
+            android:fontFamily="@font/alata"
             android:text="Do not have an account?" />
 
         <Button
@@ -91,7 +99,11 @@
             android:layout_weight="1"
             android:textColor="@color/white"
             android:padding="5dp"
-            android:text="Sign up" />
+            android:fontFamily="@font/alata"
+            android:backgroundTint="@color/pink700"
+            android:text="SIGN UP">
+        </Button>
+
     </LinearLayout>
 
 </androidx.appcompat.widget.LinearLayoutCompat>

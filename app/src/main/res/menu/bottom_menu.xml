@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <item
+        android:id="@+id/bottom_call"
+        android:title="Phone"
+        android:icon="@drawable/baseline_local_phone_24"
+        />
+
+    <item
+        android:id="@+id/bottom_sms"
+        android:title="SMS"
+        android:icon="@drawable/baseline_sms_24"
+        />
+
+    <item
+        android:id="@+id/bottom_home"
+        android:title="Home"
+        android:icon="@drawable/baseline_home_24"
+        />
+
+    <item
+        android:id="@+id/bottom_analytics"
+        android:title="Analytics"
+        android:icon="@drawable/baseline_analytics_24"
+        />
+
+    <item
+        android:id="@+id/bottom_profile"
+        android:title="Profile"
+        android:icon="@drawable/baseline_person_24"
+        />
+
+
+
+</menu>

@@ -33,7 +33,6 @@ class Login : AppCompatActivity() {
         database = FirebaseDatabase.getInstance().reference
 
 
-
         // Check if the user is already logged in
         if (firebaseAuth.currentUser != null) {
             startHomeActivity()
@@ -86,19 +85,17 @@ class Login : AppCompatActivity() {
 
                     } else {
                         // User data is null, handle the error
-                        Toast.makeText(this, "User data is null", Toast.LENGTH_SHORT)
-                            .show()
+
                     }
                 } else {
                     // User data does not exist, handle the error
-                    Toast.makeText(this, "User does not exist", Toast.LENGTH_SHORT)
-                        .show()
+
                 }
             }
 
             override fun onCancelled(error: DatabaseError) {
-                // Handle database error
-                Toast.makeText(this, "Database error", Toast.LENGTH_SHORT).show()
+                // Handle database
+
             }
         })
     }

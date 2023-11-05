@@ -16,7 +16,8 @@
         android:layout_height="wrap_content"
         android:text="Create a new account"
         android:textStyle="bold"
-        android:textColor="@color/black"
+        android:textColor="@color/pink700"
+        android:fontFamily="@font/alata"
         android:textSize="20dp"
         android:layout_gravity="center"/>
 
@@ -33,6 +34,7 @@
             android:textSize="16sp"
             android:inputType="textEmailAddress"
             android:drawablePadding="15dp"
+            android:drawableLeft="@drawable/baseline_email_24"
             android:hint="Email"
             />
     </com.google.android.material.textfield.TextInputLayout>
@@ -50,6 +52,7 @@
             android:textSize="16sp"
             android:inputType="text"
              android:drawablePadding="15dp"
+            android:drawableLeft="@drawable/baseline_person_24"
             android:hint="Unique Username"
             />
     </com.google.android.material.textfield.TextInputLayout>
@@ -68,6 +71,7 @@
             android:textSize="16sp"
             android:inputType="textPassword"
             android:drawablePadding="15dp"
+            android:drawableLeft="@drawable/baseline_password_24"
             android:hint="Password"
             />
     </com.google.android.material.textfield.TextInputLayout>
@@ -85,6 +89,7 @@
             android:textSize="16sp"
             android:inputType="textPassword"
             android:drawablePadding="15dp"
+            android:drawableLeft="@drawable/baseline_password_24"
             android:hint="Confirm Password"
             />
     </com.google.android.material.textfield.TextInputLayout>
@@ -99,16 +104,20 @@
         android:paddingHorizontal="40dp"
         android:paddingVertical="15dp"
         android:text="SIGN UP"
-        android:textSize="18sp"
+        android:fontFamily="@font/alata"
+        android:backgroundTint="@color/pink700"
+        android:textSize="16sp"
        />
 
     <Button
         android:id="@+id/googleSignup"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
+       android:paddingHorizontal="40dp"
         android:textColor="@color/white"
         android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/alata"
         android:text="Sign Up with Google" />
 
     <LinearLayout
@@ -117,7 +126,7 @@
         android:paddingHorizontal="30dp"
         android:layout_height="wrap_content"
         android:gravity="bottom"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:orientation="horizontal">
 
         <TextView
@@ -126,6 +135,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:textSize="16sp"
+            android:fontFamily="@font/alata"
             android:text="Already have an account?" />
 
         <Button
@@ -135,6 +145,8 @@
             android:layout_weight="1"
             android:textColor="@color/white"
             android:padding="5dp"
+            android:fontFamily="@font/alata"
+            android:backgroundTint="@color/pink700"
             android:text="Log In" />
     </LinearLayout>
 

@@ -45,34 +45,32 @@ class Signup : AppCompatActivity() {
             else if (password.length<6){
                 Toast.makeText(this, "The password should be at least 6 characters long!", Toast.LENGTH_SHORT).show()
             }
-            else{
-                firebaseAuth.createUserWithEmailAndPassword(email, password).addOnCompleteListener {
-                        task ->
-                    if (task.isSuccessful){
-                        val database = FirebaseDatabase.getInstance()
-                        val dbRef = database.reference.child("users")
-                        val userId = firebaseAuth.currentUser?.uid ?: ""
-                        val data = User(username, email)
+            else {
+                firebaseAuth.createUserWithEmailAndPassword(email, password)
+                    .addOnCompleteListener { task ->
+                        if (task.isSuccessful) {
+                            val database = FirebaseDatabase.getInstance()
+                            val dbRef = database.reference.child("users")
+                            val userId = firebaseAuth.currentUser?.uid ?: ""
+                            val data = User(username, email)
 
-                        val userRef = dbRef.child(userId)
-                        userRef.setValue(data)
+                            val userRef = dbRef.child(userId)
+                            userRef.setValue(data)
 
-                        Toast.makeText(this, "Sign up successful", Toast.LENGTH_SHORT).show()
+                            Toast.makeText(this, "Sign up successful", Toast.LENGTH_SHORT).show()
 
+                        } else {
+                            Toast.makeText(this, "Sign up failed! Try again", Toast.LENGTH_SHORT)
+                                .show()
+                        }
                     }
-                    else{
-                        Toast.makeText(this, "Sign up failed! Try again", Toast.LENGTH_SHORT).show()
-                    }
-                }
             }
-
-
-
         }
 
         loginBtn.setOnClickListener {
             intent = Intent(this, Login::class.java)
             startActivity(intent)
+            finish()
         }
     }
     data class User(
