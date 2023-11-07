@@ -1,9 +1,13 @@
 package com.example.safetyapp
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Button
+import android.widget.Toast
 import androidx.fragment.app.Fragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import com.google.firebase.auth.FirebaseAuth
 
 class Dashboard : AppCompatActivity() {
 
@@ -23,29 +27,38 @@ class Dashboard : AppCompatActivity() {
                 }
 
                 R.id.bottom_sms -> {
-                    replaceFragment(SMSFragment())
+//                    intent = Intent(this, Login::smsActivity.java)
+//                    startActivity(intent)
+//                    finish()
                     true
                 }
 
                 R.id.bottom_call -> {
-                    replaceFragment(callFragment())
+//                    intent = Intent(this, Login::class.java)
+//                    startActivity(intent)
+//                    finish()
                     true
                 }
 
                 R.id.bottom_analytics -> {
-                    replaceFragment(analyticsFragment())
+//                    intent = Intent(this, Login::class.java)
+//                    startActivity(intent)
+//                    finish()
                     true
                 }
 
                 R.id.bottom_profile -> {
-                    replaceFragment(profileFragment())
+                    intent = Intent(this, UserProfile::class.java)
+                    startActivity(intent)
+                    finish()
                     true
                 }
                 else -> false
 
         }
         }
-    replaceFragment(HomeFragment())
+        replaceFragment(HomeFragment())
+
     }
 
     private fun replaceFragment(fragment: Fragment){
