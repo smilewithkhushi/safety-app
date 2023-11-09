@@ -33,10 +33,11 @@
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_margin="10dp"
-                android:src="@drawable/profileicon" />
+                android:src="@drawable/baseline_person_24" />
 
 
-            <TextView
+
+            <EditText
                 android:id="@+id/username"
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
@@ -47,7 +48,7 @@
                 android:handwritingBoundsOffsetRight="@dimen/material_emphasis_high_type"
                 android:text="User Name" />
 
-            <TextView
+            <EditText
                 android:id="@+id/gender"
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
@@ -59,7 +60,7 @@
                 android:text="Gender" />
 
 
-            <TextView
+            <EditText
                 android:id="@+id/dob"
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
@@ -70,7 +71,7 @@
                 android:handwritingBoundsOffsetRight="@dimen/material_emphasis_high_type"
                 android:text="Date of Birth" />
 
-            <TextView
+            <EditText
                 android:id="@+id/member1"
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
@@ -81,7 +82,7 @@
                 android:handwritingBoundsOffsetRight="@dimen/material_emphasis_high_type"
                 android:text="Family Member" />
 
-            <TextView
+            <EditText
                 android:id="@+id/memberPhone1"
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
@@ -92,7 +93,7 @@
                 android:handwritingBoundsOffsetRight="@dimen/material_emphasis_high_type"
                 android:text="Member Contact Details" />
 
-            <TextView
+            <EditText
                 android:id="@+id/member2"
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
@@ -103,7 +104,7 @@
                 android:handwritingBoundsOffsetRight="@dimen/material_emphasis_high_type"
                 android:text="Family Member" />
 
-            <TextView
+            <EditText
                 android:id="@+id/memberPhone2"
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
