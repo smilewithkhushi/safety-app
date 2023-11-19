@@ -12,12 +12,12 @@
         <item name="colorPrimary">@color/pink500</item>
         <item name="colorPrimaryDark">@color/pink900</item>
         <item name="colorAccent">@color/pink300</item>
-<!--        -->
-<!--        <item name="">#ffff</item>-->
-<!--        &lt;!&ndash;        Our app's background colour when light mode is on == white&ndash;&gt;-->
-<!--        <item name="">#000</item>-->
-<!--        &lt;!&ndash;        Text color is blac1k&ndash;&gt;-->
-<!--        <item name="">@color/pink500</item>-->
+        <!--        -->
+        <!--        <item name="">#ffff</item>-->
+        <!--        &lt;!&ndash;        Our app's background colour when light mode is on == white&ndash;&gt;-->
+        <!--        <item name="">#000</item>-->
+        <!--        &lt;!&ndash;        Text color is blac1k&ndash;&gt;-->
+        <!--        <item name="">@color/pink500</item>-->
     </style>
 
 

@@ -58,7 +58,7 @@ class Signup : AppCompatActivity() {
                             userRef.setValue(data)
 
                             Toast.makeText(this, "Sign up successful", Toast.LENGTH_SHORT).show()
-
+                            firebaseAuth.signOut()
                         } else {
                             Toast.makeText(this, "Sign up failed! Try again", Toast.LENGTH_SHORT)
                                 .show()

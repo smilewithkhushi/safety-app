@@ -65,6 +65,7 @@ class Login : AppCompatActivity() {
         signupButton.setOnClickListener {
             intent = Intent(this, Signup::class.java)
             startActivity(intent)
+            finish()
         }
     }
 
@@ -84,7 +85,7 @@ class Login : AppCompatActivity() {
                         finish()
 
                     } else {
-                        // User data is null, handle the error
+
 
                     }
                 } else {
@@ -101,15 +102,9 @@ class Login : AppCompatActivity() {
     }
 
     private fun startHomeActivity() {
-        val intent = Intent(this, Dashboard::class.java)
+        val intent = Intent(this, UserProfile::class.java)
         startActivity(intent)
         finish()
     }
 }
-
-data class User(
-    val userId: String = "",
-    val username: String = "",
-    val email: String = ""
-)
 

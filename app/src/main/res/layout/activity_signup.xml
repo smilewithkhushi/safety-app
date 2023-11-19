@@ -53,7 +53,7 @@
             android:inputType="text"
              android:drawablePadding="15dp"
             android:drawableLeft="@drawable/baseline_person_24"
-            android:hint="Unique Username"
+            android:hint="Name"
             />
     </com.google.android.material.textfield.TextInputLayout>
 

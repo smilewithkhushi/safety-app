@@ -9,12 +9,6 @@
         />
 
     <item
-        android:id="@+id/bottom_call"
-        android:title="Phone"
-        android:icon="@drawable/baseline_local_phone_24"
-        />
-
-    <item
         android:id="@+id/bottom_sms"
         android:title="SMS"
         android:icon="@drawable/baseline_sms_24"

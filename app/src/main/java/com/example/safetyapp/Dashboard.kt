@@ -16,53 +16,6 @@ class Dashboard : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_dashboard)
 
-        bottomNavigationView = findViewById(R.id.bottom_navigation)
-
-        bottomNavigationView.setOnItemSelectedListener {
-            menuItem ->
-            when(menuItem.itemId){
-                R.id.bottom_home -> {
-                    replaceFragment(HomeFragment())
-                    true
-                }
-
-                R.id.bottom_sms -> {
-//                    intent = Intent(this, Login::smsActivity.java)
-//                    startActivity(intent)
-//                    finish()
-                    true
-                }
-
-                R.id.bottom_call -> {
-//                    intent = Intent(this, Login::class.java)
-//                    startActivity(intent)
-//                    finish()
-                    true
-                }
-
-                R.id.bottom_analytics -> {
-//                    intent = Intent(this, Login::class.java)
-//                    startActivity(intent)
-//                    finish()
-                    true
-                }
-
-                R.id.bottom_profile -> {
-                    intent = Intent(this, UserProfile::class.java)
-                    startActivity(intent)
-                    finish()
-                    true
-                }
-                else -> false
-
-        }
-        }
-        replaceFragment(HomeFragment())
-
-    }
-
-    private fun replaceFragment(fragment: Fragment){
-        supportFragmentManager.beginTransaction().replace(R.id.frame_container, fragment).commit()
     }
 
 }
